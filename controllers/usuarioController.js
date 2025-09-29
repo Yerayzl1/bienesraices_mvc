@@ -5,7 +5,9 @@ const formularioLogin = (req, res) => {
 };
 
 const formularioRegistro = (req, res) => {
-  res.render('auth/registro', {});
+  res.render('auth/registro', {
+    pagina: 'Crear cuenta',
+  });
 };
 
 // export default exporta solo un objeto, cuando los importas, puedes usar el nombre que quieras.
