@@ -37,6 +37,10 @@ const registrar = async (req, res) => {
     return res.render('auth/registro', {
       pagina: 'Crear página',
       errores: resultado.array(),
+      usuario: {
+        nombre: req.body.nombre,
+        email: req.body.email,
+      },
     });
   }
 
